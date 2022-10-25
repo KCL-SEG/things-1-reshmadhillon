@@ -5,7 +5,8 @@ from django.core.validators import MaxValueValidator,MinValueValidator
 class Thing(Model):
     name = models.CharField(
         max_length=30,
-        unique=True
+        unique=True,
+        blank = False
     )
     description = models.CharField(
         max_length=120,
