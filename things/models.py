@@ -9,10 +9,8 @@ class Thing(Model):
     )
     description = models.CharField(
         max_length=120,
-        blank = False
     )
     quantity = models.IntegerField(
-        blank = False,
         validators=[MaxValueValidator(100),
                     MinValueValidator(0)]
         #test_quantity_must_not_be_greater_than_100,
