@@ -8,7 +8,7 @@ class Thing(Model):
         unique=True
     )
     description = models.CharField(
-        max_length=100,
+        max_length=120,
         blank = False
     )
     quantity = models.IntegerField(
